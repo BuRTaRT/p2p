@@ -20,10 +20,10 @@ function App() {
         <div className={'wrapper'}>
             {isVisiblePopUp && <PopUp onIsInvisible={setIsInvisible}/>}
             <Header onIsVisible={setIsVisible}/>
-            <HowItWorks/>
-            <ManageLife/>
-            <InsiderInfo/>
-            <Chicken/>
+            <HowItWorks onIsVisible={setIsVisible}/>
+            <ManageLife onIsVisible={setIsVisible}/>
+            <InsiderInfo onIsVisible={setIsVisible}/>
+            <Chicken onIsVisible={setIsVisible}/>
         </div>
     )
 }

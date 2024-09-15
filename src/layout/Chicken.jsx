@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Button from "../components/button.jsx";
 
-const Chicken = () => {
+const Chicken = ({onIsVisible}) => {
 
     const settings = {
         dots: true,
@@ -61,7 +61,7 @@ const Chicken = () => {
                 </div>
                 <div className={s.title2}>ХОЧЕШЬ ТАКИЕ ЖЕ РЕЗУЛЬТАТЫ?</div>
                 <div className={s['title2-text']}>ЕСТЬ СВЯЗКА ДЛЯ ТЕБЯ!</div>
-                <Button text={"Бесплатная консультация"}/>
+                <Button onIsVisible={onIsVisible} text={"Бесплатная консультация"}/>
 
             </div>
         </>

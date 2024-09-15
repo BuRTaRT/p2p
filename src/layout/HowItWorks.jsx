@@ -1,7 +1,7 @@
 import s from './howItWorks.module.css'
 import Button from "../components/button.jsx";
 
-const HowItWorks = () => {
+const HowItWorks = ({onIsVisible}) => {
     return (
         <div className={s.wrap}>
             <h1 className={s.title}>Как работают арбитражники?</h1>
@@ -36,7 +36,7 @@ const HowItWorks = () => {
             <div className={s["points-container"]}>
                 <img src="/points.svg" alt=""/>
             </div>
-            <Button text={'Начать прямо сейчас'}/>
+            <Button onIsVisible={onIsVisible} text={'Начать прямо сейчас'}/>
         </div>
     );
 };

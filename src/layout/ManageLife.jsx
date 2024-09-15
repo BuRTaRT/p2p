@@ -1,7 +1,7 @@
 import Button from "../components/button.jsx";
 import s from './manageLife.module.css'
 
-const ManageLife = () => {
+const ManageLife = ({onIsVisible}) => {
     return (
         <div className={s.wrap}>
             <div className={s["manage-block"]}>
@@ -31,7 +31,7 @@ const ManageLife = () => {
                     </div>
                     <p className={`${s['manage-text']} ${s.mobile}`}>Бесплатно только 25 мест /</p>
                     <p className={`${s['manage-text']} ${s.color} ${s.mobile}`}>Осталось: 7 мест</p>
-                    <Button className={s.mobile} text={'Регистрация в один клик'}/>
+                    <Button onIsVisible={onIsVisible} className={s.mobile} text={'Регистрация в один клик'}/>
                 </div>
             </div>
         </div>

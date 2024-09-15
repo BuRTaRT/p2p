@@ -58,7 +58,7 @@ const PopUp = ({onIsInvisible}) => {
                             inputProps={{
                                 name: 'phone',
                                 required: true,
-                                autoFocus: true
+                                autoFocus: false
                             }}
                         />
                         {errors.phone && <p className={s.error}>{errors.phone.message}</p>}

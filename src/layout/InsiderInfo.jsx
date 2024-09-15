@@ -2,7 +2,7 @@ import React from 'react';
 import s from './indsiderInfo.module.css'
 import Button from "../components/button.jsx";
 
-const InsiderInfo = () => {
+const InsiderInfo = ({onIsVisible}) => {
     return (
         <div className={s.wrap}>
             <p className={s.title}>Хочешь в группу с инсайдерской инфой?</p>
@@ -18,7 +18,7 @@ const InsiderInfo = () => {
                     <img src="/robot_1png.svg" alt="robot"/>
                 </div>
             </div>
-            <Button className={s.mobile} text={'Начать сейчас'}/>
+            <Button onIsVisible={onIsVisible} className={s.mobile} text={'Начать сейчас'}/>
         </div>
     );
 };
