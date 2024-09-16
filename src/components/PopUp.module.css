@@ -84,6 +84,7 @@
     .wrap {
         background-color: black;
         height: 100%;
+        overflow: hidden;
     }
 
     .popup {
