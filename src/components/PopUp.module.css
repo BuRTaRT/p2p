@@ -30,6 +30,7 @@
     background-color: white;
     padding: 40px 45px;
     color: black;
+    overflow-y: auto;
 
 }
 .form {
