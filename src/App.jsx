@@ -9,13 +9,16 @@ import {useState} from "react";
 
 function App() {
     const [isVisiblePopUp, setIsVisiblePopUp] = useState(false);
-
+    const body = document.getElementsByTagName('body')[0]
+    console.log(body)
     const setIsVisible = () => {
         setIsVisiblePopUp(true)
+  body.style.overflow='hidden'
+
     }
     const setIsInvisible = (e) => {
-        setIsVisiblePopUp(false)
-
+        setIsVisiblePopUp(false);
+        body.style.overflow='auto'
     }
     return (
         <div className={'wrapper'}>
