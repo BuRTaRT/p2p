@@ -62,7 +62,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid gray;
+    margin-top: 35px;
 
+}
+form{
+    margin-top: 25px;
 }
 @media screen and (max-width: 992px) {
     .block {

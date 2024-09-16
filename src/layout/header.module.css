@@ -58,6 +58,9 @@
 }
 
 @media screen and (max-width: 992px) {
+    .header{
+        padding-top: 50px;
+    }
     .promo-img img {
         transform: translateY(0px);
         margin-top: 30px;
