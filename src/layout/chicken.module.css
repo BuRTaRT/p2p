@@ -57,6 +57,13 @@
     width: 400px;
     margin-top: 25px;
 }
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
 @media screen and (max-width: 992px) {
     .block {
         display: flex;

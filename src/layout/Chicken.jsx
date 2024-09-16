@@ -12,10 +12,10 @@ const Chicken = ({onIsVisible}) => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplaySpeed:3000,
-        autoplay:true,
+        autoplaySpeed: 3000,
+        autoplay: true,
         appendDots: dots => (
-                <ul style={{ margin: "0px" }}> {dots} </ul>
+            <ul style={{margin: "0px"}}> {dots} </ul>
         ),
 
     };
@@ -59,9 +59,11 @@ const Chicken = ({onIsVisible}) => {
                         </div>
                     </Slider>
                 </div>
-                <div className={s.title2}>ХОЧЕШЬ ТАКИЕ ЖЕ РЕЗУЛЬТАТЫ?</div>
-                <div className={s['title2-text']}>ЕСТЬ СВЯЗКА ДЛЯ ТЕБЯ!</div>
-                <Button onIsVisible={onIsVisible} text={"Бесплатная консультация"}/>
+                <div className={s.footer}>
+                    <div className={s.title2}>ХОЧЕШЬ ТАКИЕ ЖЕ РЕЗУЛЬТАТЫ?</div>
+                    <div className={s['title2-text']}>ЕСТЬ СВЯЗКА ДЛЯ ТЕБЯ!</div>
+                    <Button onIsVisible={onIsVisible} text={"Бесплатная консультация"}/>
+                </div>
 
             </div>
         </>

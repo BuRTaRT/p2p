@@ -12,7 +12,7 @@ const InsiderInfo = ({onIsVisible}) => {
                     <p className={s.description}>Это бесконечный поток <span className={s.bold}>бесплатных связок, советов и идей по заработку</span> в сфере P2P криптоарбитража,
                         эксклюзивная информация и личный опыт арбитражников.
                         И все это бесплатно, все, что тебе нужно сделать — подписаться на нас!</p>
-                    <Button className={s.desktop} text={'Начать сейчас'}/>
+                    <Button onIsVisible={onIsVisible} className={s.desktop} text={'Начать сейчас'}/>
                 </div>
                 <div className={s.right}>
                     <img src="/robot_1png.svg" alt="robot"/>

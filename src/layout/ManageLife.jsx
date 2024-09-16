@@ -10,7 +10,7 @@ const ManageLife = ({onIsVisible}) => {
                     <img className={s.img} src="/manage.svg" alt=""/>
                     <p className={s['manage-text']}>Бесплатно только 25 мест /</p>
                     <p className={`${s['manage-text']} ${s.color}`}>Осталось: 7 мест</p>
-                    <Button className={s['btn-desktop']} text={'Регистрация в один клик'}/>
+                    <Button onIsVisible={onIsVisible} className={s['btn-desktop']} text={'Регистрация в один клик'}/>
                 </div>
                 <div className={s.right}>
                     <div className={s.points}>

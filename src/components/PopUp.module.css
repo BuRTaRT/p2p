@@ -52,6 +52,13 @@
     color: red;
     text-align: left;
 }
+.submit{
+    background-color: #000000;
+    padding: 20px 0;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+}
 @media screen and (max-width: 992px){
  .popup{
      width:85%

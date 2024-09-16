@@ -1,25 +1,22 @@
 import s from './PopUp.module.css'
 import 'react-phone-input-2/lib/style.css'
 import PhoneInput from "react-phone-input-2";
-import {useEffect, useState} from "react";
 import {useForm} from "react-hook-form";
+import {useState} from "react";
 
-
-let submitted = false;
 const PopUp = ({onIsInvisible}) => {
-
-
+    const [phone, setPhone] = useState('');
+    const [submitted,setSubmitted]=[useState(false)]
     const {
         register,
         trigger,
         setValue,
         handleSubmit,
-        formState: {errors}
+        formState: {errors},
+        reset
     } = useForm();
 
     const onSubmit = (data) => {
-        submitted = true;
-
         const res = fetch('https://udemy-react-f6ba3-default-rtdb.europe-west1.firebasedatabase.app/lid.json', {
             method: "POST",
             headers: {
@@ -28,7 +25,13 @@ const PopUp = ({onIsInvisible}) => {
             },
             body: JSON.stringify(data)
         })
+        setPhone('')
+        reset();
+        console.log(data)
+
     }
+
+
     return (
         <div onMouseDown={onIsInvisible} className={s.wrap}>
             <div onMouseDown={(e) => e.stopPropagation()} className={s.popup}>
@@ -37,22 +40,24 @@ const PopUp = ({onIsInvisible}) => {
 
                 <form className={s.form} onSubmit={handleSubmit(onSubmit)}>
                     <div className={s.input}>
-                        <input {...register('name', {
+                        <input
+                            {...register('name', {
                             required: 'Имя обязательно',
                             pattern: {
                                 value: /^[a-zA-Zа-яА-Я]{3,20}$/i,
                                 message: 'Введите корректное имя',
                             }
-                        })} type="text"
-                               placeholder={'Имя'}/>
+                        })} type="text" placeholder={'Имя'}/>
                         {errors.name && <p className={s.error}>{errors.name.message}</p>}
                     </div>
                     <div className={s.input}>
                         <PhoneInput
                             country={'ru'}
+                            value={phone}
                             onChange={(phone) => {
                                 setValue('phone', phone)
                                 trigger('phone');
+                                setPhone(phone);  // Обновляем состояние phone
                             }}
                             inputClass={s['phone-input']}
                             inputProps={{
@@ -83,7 +88,7 @@ const PopUp = ({onIsInvisible}) => {
                         />
                         {errors.email && <p className={s.error}>{errors.email.message}</p>}
                     </div>
-                    <button>submit</button>
+                    <button className={s.submit} type={"submit"}>submit</button>
                 </form>
             </div>
         </div>

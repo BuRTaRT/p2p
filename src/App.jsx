@@ -10,11 +10,12 @@ import {useState} from "react";
 function App() {
     const [isVisiblePopUp, setIsVisiblePopUp] = useState(false);
 
-    const setIsVisible = (e) => {
+    const setIsVisible = () => {
         setIsVisiblePopUp(true)
     }
     const setIsInvisible = (e) => {
         setIsVisiblePopUp(false)
+
     }
     return (
         <div className={'wrapper'}>
