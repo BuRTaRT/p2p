@@ -2,7 +2,7 @@ import s from './chicken.module.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Button from "../components/button.jsx";
+import Button from "../components/Button.jsx";
 
 const Chicken = ({onIsVisible}) => {
 

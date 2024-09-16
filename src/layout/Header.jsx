@@ -1,5 +1,5 @@
 import s from './header.module.css'
-import Button from "../components/button.jsx";
+import Button from "../components/Button.jsx";
 
 const Header = ({onIsVisible}) => {
     return (

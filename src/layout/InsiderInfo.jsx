@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './indsiderInfo.module.css'
-import Button from "../components/button.jsx";
+import Button from "../components/Button.jsx";
 
 const InsiderInfo = ({onIsVisible}) => {
     return (

@@ -1,4 +1,4 @@
-import Button from "../components/button.jsx";
+import Button from "../components/Button.jsx";
 import s from './manageLife.module.css'
 
 const ManageLife = ({onIsVisible}) => {
