@@ -31,6 +31,7 @@
     padding: 40px 45px;
     color: black;
     overflow-y: auto;
+    animation: slide-down 300ms ease-out forwards;
 
 }
 .form {
@@ -91,6 +92,7 @@
     .popup {
         width: 85%;
         min-height: 80%;
+
     }
 
     .phone-input {
@@ -111,5 +113,16 @@
     .wrap img{
         top: 30px;
         right: 10px;
+    }
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
