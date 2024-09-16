@@ -96,7 +96,7 @@ const PopUp = ({onIsInvisible}) => {
             <img src="/x-mark-512.png" alt=""/>
             <div onMouseDown={(e) => e.stopPropagation()} className={s.popup}>
                 <h2>Оставь заявку</h2>
-                <p>Наш специалист свяжется и присоединит к Вас закрытой бесплатной группе</p>
+                <p>Наш специалист свяжется и присоединит Вас к закрытой бесплатной группе</p>
 
                 {content}
 
