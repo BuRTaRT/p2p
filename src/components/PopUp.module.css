@@ -81,10 +81,9 @@
     }
  .popup{
      width:85%;
-     height:90vh;
+     height:90%;
      margin-top: 10vh;
- }
-    .phone-input{
+ }  .phone-input{
         width:328px !important;
 
     }

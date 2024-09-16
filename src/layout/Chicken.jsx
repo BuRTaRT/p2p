@@ -22,9 +22,9 @@ const Chicken = ({onIsVisible}) => {
     return (
         <>
             <div className={s.wrap}>
-                <p className={s.title}> Денис Агапов</p>
+                <p className={s.title}>Андрей Швецов</p>
                 <div className={s.block}>
-                    <img className={s.photo} src="/photo_2024-04-24_146.png" alt=""/>
+                    <img className={s.photo} src="/IMG_8291.JPG" alt=""/>
                     <ul>
                         <li>Один из один из самых известных P2P и OTC-трейдеров в СНГ с <span>6 летним опытом</span>
                         </li>
